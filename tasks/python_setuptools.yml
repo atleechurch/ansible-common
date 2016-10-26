@@ -1,0 +1,3 @@
+---
+ - name: python-setuptools | Make sure python setup-tools (easy_install) is installed
+   apt: pkg=python-setuptools state=latest update_cache=true

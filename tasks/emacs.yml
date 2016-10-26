@@ -1,0 +1,3 @@
+---
+ - name: emacs | Make sure emacs24-nox is installed
+   apt: pkg=emacs24-nox state=latest update_cache=true

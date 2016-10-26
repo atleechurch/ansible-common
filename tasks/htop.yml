@@ -1,0 +1,3 @@
+---
+ - name: htop | Make sure htop is installed
+   apt: pkg=htop state=latest update_cache=true

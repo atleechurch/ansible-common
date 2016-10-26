@@ -1,0 +1,20 @@
+---
+ # Username & Password that we want to create on the Linux Server
+ username: "{{ VAULT_COMMON_USERNAME }}"
+ password: "{{ VAULT_COMMON_PASSWORD }}"
+
+ # Used by SSMTPD to send email
+ gmail_id: "{{ VAULT_COMMON_GMAIL_ID }}"
+ gmail_password: "{{ VAULT_COMMON_GMAIL_PASSWORD }}"
+
+ # Fail2Ban will send the Alerts on this Email
+ receiver_mail: "{{ VAULT_COMMON_DESTINATION_EMAIL }}"
+
+ # Hostname Settings
+ default_ip: 127.0.1.1               # ip address of the server either public or private
+ hostname: hostname                  # hostname of the Linux Server
+ domain: domain.ext                  # Domain name that will be used in fqdn
+ fqdn: "{{ hostname }}.{{ domain }}" # FQDN that will be used in hosts file
+
+ # Timezone Setting
+ timezone: "America/New_York"

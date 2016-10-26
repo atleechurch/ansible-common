@@ -1,0 +1,21 @@
+---
+#
+# The following variables are passed to the default variables,
+# this is done so that a grep of the source will show the source
+# of a variable, even if the vault is encrypted
+#
+# Because these variables represent sensitive information, make
+# sure you encrypt this file before placing it anywhere even
+# slightly publicly accessible.  A copy of the encrypted file
+# could even be edited and passed to ansible with '-e' on the
+# command line.
+#
+
+ # Username & Password that we want to create on the Linux Server
+ VAULT_COMMON_USERNAME: YOUR_LOCAL_USERNAME             # Created as a local account on the machine
+ VAULT_COMMON_PASSWORD: YOUR_LOCAL_ACCOUNT_PASSWORD     # Reccomended to be very long and complex and use SSH keyfiles instead to log in
+ # Mentioned your GMAIL ID and Password Here
+ VAULT_COMMON_GMAIL_ID: YOUR_GMAIL_ACCOUNT              # Used by ssmptd to send email
+ VAULT_COMMON_GMAIL_PASSWORD: YOUR_GMAIL_PASSWORD       # Used by ssmptd to send email
+ # Fail2Ban will send the Alerts on this Email
+ VAULT_COMMON_DESTINATION_EMAIL: DESTINATION@DOMAIN.ext    # Where emails sent by fail2ban and similar scripts go
